@@ -1,0 +1,12 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: testpod1
+  labels:
+    env: dev
+specs:
+  containers:
+    - name: c00
+      image: centos
+      command: ["/bin/bash", "-c", "while true; do ehco hello-jamal; sleep 5; done"]
+      
